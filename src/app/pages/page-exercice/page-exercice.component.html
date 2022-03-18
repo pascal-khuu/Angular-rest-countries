@@ -1,0 +1,16 @@
+<h1>Coucou tout le monde</h1>
+<p title="Prénom">Je m'appelle Pascal</p>
+<p title="customTitle"> Essai raté</p>
+<p [title]="customTitle">Essai réussi</p>
+
+<button
+id="monButton"
+class="btn btn-success"
+(click)="onClickDisplayInfo()">Coucou</button>
+<br>
+<br>
+<button
+    class="btn btn-success"
+    (click)="onClickDisplayMessage()">
+{{textButton}}</button>
+<p *ngIf="messageIsDisplay">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non nisi quibusdam delectus tenetur doloribus, saepe tempora, quaerat, ullam voluptas qui unde perspiciatis autem minus! Officia dicta molestiae quibusdam nam distinctio.</p>
